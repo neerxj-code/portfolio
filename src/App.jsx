@@ -4,7 +4,7 @@ import Hero from './components/Hero'
 
 const App = () => {
   return (
-    <div className=''>
+    <div className='min-h-screen '>
       <Hero />
     </div>
   )
