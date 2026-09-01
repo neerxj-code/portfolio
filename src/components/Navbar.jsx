@@ -3,17 +3,33 @@ import React from 'react'
 const Navbar = () => {
   return (
     <div>
-      <header className=''>
-        <div className='flex justify-between items-center absolute z-30 top-0 left-0 w-100% h-20 px-15 py-20'>
-            <a href='/'>Neeraj</a>
-            </div>
+      <header className='navbar'>
+
+            <a href='/' className='logo'>
+            <span>Neeraj</span>
+            </a>
+           
         
-        <div className='relative flex justify-flex-end items-center'>
-            <a href=''>Work</a>
-            <a href=''>About</a>
-            <a href=''>Service</a>
-            <a href=''>Contact</a>
-            <button>-</button>
+        <div className='nav-right'>
+          <nav className='nav-links'>
+            <a className='nav-link' href=''>Work</a>
+            <a className='nav-link' href=''>About</a>
+            <a className='nav-link' href=''>Service</a>
+            <a className='nav-link' href=''>Contact</a>
+
+                        <button
+            className='menu-button'
+            aria-label='Open menu'
+            >
+              <span className='menu-lines'>
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </button>
+          </nav>
+
+
         </div>
       </header>
     </div>
