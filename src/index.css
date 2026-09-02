@@ -324,7 +324,7 @@ button{
 
     color: #d84900;
 
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 700;
 
     cursor: pointer;
@@ -522,4 +522,29 @@ button{
   .marquee-track {
     animation-duration: 16s;
   }
+}
+
+/* .about-section{
+    background:
+    radial-gradient(
+        circle at 42% 54%,
+        rgba(255, 176, 35, 0.95) 0%,
+        rgba(255, 108, 0, 0.95) 35%,
+        rgba(170, 46, 0, 0.98) 100%
+    );
+} */
+
+
+
+.app-bg{
+      background:
+    radial-gradient(
+        circle at 42% 54%,
+        rgba(255, 176, 35, 0.95) 0%,
+        rgba(255, 108, 0, 0.95) 35%,
+        rgba(170, 46, 0, 0.98) 100%
+    );
+    
+
+
 }

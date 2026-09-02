@@ -38,7 +38,7 @@ const Hero = () => {
           </p>
                
                <button className='hero-button'>
-                <span>VIEW WORK</span>
+                <a href='/'>LET'S TALK</a>
                 <span className='arrow'><ArrowUpRight size={30}/></span>
                </button>
         
