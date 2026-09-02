@@ -6,17 +6,17 @@ import About from './components/About'
 import Stack from './components/Stack'
 
 import appBg from './assets/bg.png';
-import Test from './components/Test'
+// import Test from './components/Test'
 
 const App = () => {
   return (
-    <div className='app-bg min-h-screen '>
-      {/* <Hero />
+    <div className=' min-h-screen '>
+      <Hero />
       <Marquee />
       <About />
-      <Stack /> */}
+      <Stack />
 
-      <Test />
+      {/* <Test /> */}
     </div>
   )
 }

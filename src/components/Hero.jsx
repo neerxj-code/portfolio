@@ -7,11 +7,17 @@ import { ArrowUpRight } from 'lucide-react';
 const Hero = () => {
   return (
     <>
-    <main className='hero-section'>
+    <main className='portfolio-page'>
 
-      <div className='orange-shape-one'></div>
+      <div className="stars" aria-hidden="true">
+        {Array.from({ length: 42 }).map((_, index) => (
+          <span className="star" key={index}></span>
+        ))}
+      </div>
+
+      {/* <div className='orange-shape-one'></div>
       <div className='orange-shape-two'></div>
-      <div className='orange-glow'></div>
+      <div className='orange-glow'></div> */}
       
       <div className='white-screen'>
         <div className='availability'>
