@@ -552,14 +552,14 @@ export default function Test() {
         }`}
       >
 
-        <button
+        {/* <button
           className="menu-close"
           onClick={() =>
             setMenuOpen(false)
           }
         >
           ×
-        </button>
+        </button> */}
 
         <div className="menu-content">
 

@@ -5,7 +5,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Marquee from './components/Marquee'
 import About from './components/About'
-import Stack from './components/Stack'
+
 
 import appBg from './assets/bg.png';
 import Marquee1 from './components/Marquee/Marquee1'
@@ -27,7 +27,7 @@ const App = () => {
       <Marquee />
       <About1 />
       <Stack1 />
-      <Stack />
+
 
       {/* <Test /> */}
     </div>

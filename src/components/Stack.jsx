@@ -164,7 +164,7 @@ export default function Stack() {
            STACK PAGE
         ========================================= */
 
-        .stack-page {
+        .stack-page1 {
           position: relative;
           min-height: 100vh;
           overflow: hidden;
@@ -187,7 +187,7 @@ export default function Stack() {
            CONTENT CONTAINER
         ========================================= */
 
-        .stack-container {
+        .stack-container1 {
           position: relative;
           z-index: 2;
 
@@ -203,7 +203,7 @@ export default function Stack() {
            HEADER
         ========================================= */
 
-        .stack-heading {
+        .stack-heading1 {
           display: flex;
           align-items: center;
 
@@ -217,7 +217,7 @@ export default function Stack() {
           font-weight: 400;
         }
 
-        .heading-symbol {
+        .heading-symbol1 {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -238,7 +238,7 @@ export default function Stack() {
            CATEGORY
         ========================================= */
 
-        .stack-category {
+        .stack-category1 {
           display: grid;
 
           grid-template-columns: 400px 1fr;
@@ -257,7 +257,7 @@ export default function Stack() {
            CATEGORY TITLE
         ========================================= */
 
-        .category-title {
+        .category-title1 {
           color: #a8a8a8;
 
           font-family:
@@ -282,7 +282,7 @@ export default function Stack() {
            TECHNOLOGY LIST
         ========================================= */
 
-        .tech-list {
+        // .tech-list {
           display: grid;
 
           grid-template-columns:
@@ -297,7 +297,7 @@ export default function Stack() {
            TECHNOLOGY ITEM
         ========================================= */
 
-        .tech-item {
+        // .tech-item {
           display: flex;
           align-items: center;
 
@@ -319,7 +319,7 @@ export default function Stack() {
            ICON
         ========================================= */
 
-        .tech-icon {
+        // .tech-icon {
           display: flex;
           align-items: center;
           justify-content: center;
