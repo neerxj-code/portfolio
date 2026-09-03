@@ -6,15 +6,17 @@ const Marquee = () => {
     "Frontend Development",
     "React.js Development",
     "Responsive Design",
-    "Interactive UI",
     "JavaScript Development",
+    "Interactive UI",
     "Tailwind CSS",
+    "HTML",
+    "CSS"
   ];
 
   return (
     <section className="marquee">
       <div className="marquee-track">
-        {/* First set */}
+        
         <div className="marquee-content">
           {items.map((item, index) => (
             <React.Fragment key={index}>
@@ -24,7 +26,7 @@ const Marquee = () => {
           ))}
         </div>
 
-        {/* Duplicate set for seamless loop */}
+        
         <div className="marquee-content" aria-hidden="true">
           {items.map((item, index) => (
             <React.Fragment key={index}>

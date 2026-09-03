@@ -1,3 +1,5 @@
+import './App.css';
+
 import React from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
@@ -6,18 +8,32 @@ import About from './components/About'
 import Stack from './components/Stack'
 
 import appBg from './assets/bg.png';
+import Marquee1 from './components/Marquee/Marquee1'
+import About1 from './components/About/About1'
+import Stack1 from './components/Stack/Stack1';
 // import Test from './components/Test'
 
 const App = () => {
   return (
-    <div className=' min-h-screen '>
+    <div className=' bg-black min-h-screen '>
+      <div className='app-page'>
+              <div className="stars" aria-hidden="true">
+        {Array.from({ length: 42 }).map((_, index) => (
+          <span className="star" key={index}></span>
+        ))}
+         </div>
+
       <Hero />
       <Marquee />
-      <About />
+      <About1 />
+      <Stack1 />
       <Stack />
 
       {/* <Test /> */}
     </div>
+    <About />
+      </div>
+      
   )
 }
 

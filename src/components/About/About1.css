@@ -1,0 +1,78 @@
+
+.about-page {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+        circle at 50% 15%,
+        rgba(255, 255, 255, 0.025),
+        transparent 35%
+    ),
+    #202020;
+}
+
+.about-section1 {
+    position: relative;
+    z-index: 2;
+    width: min(1080px, calc(100% - 48px));
+    margin: 0 auto;
+    padding : 108px 0 120px;
+}
+
+.about-statement {
+    max-width: 970px;
+}
+
+.about-statement p {
+    margin: 0;
+    color: #f3f3f3;
+    font-size: clamp(38px, 4.05vw, 58px);
+    font-weight: 300;
+    line-height: 1.01;
+    letter-spacing: -0.045em;
+}
+
+.about-label {
+    margin-top: 82px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+    color: #bdbdbd;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+}
+
+.about-grid1 {
+    display: grid;
+    grid-template-columns:
+    minmax(320px, 1fr)
+    minmax(320px, 1fr);
+
+    gap: 72px;
+    padding-top: 34px;
+}
+
+.about-title1 h1{
+    margin: 0;
+    color: #f3f3f3;
+    font-size: clamp(38px, 4vw, 48px);
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+}
+
+.about-text1 {
+    max-width: 440px;
+}
+
+.about-text1 p {
+    margin: 0 0 16px;
+    color: #bfc0c2;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: -0.015em;
+}
+

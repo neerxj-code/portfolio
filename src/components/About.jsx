@@ -4,11 +4,11 @@ function About() {
   return (
     <main className="portfolio-page">
       {/* Background stars */}
-      <div className="stars" aria-hidden="true">
+      {/* <div className="stars" aria-hidden="true">
         {Array.from({ length: 42 }).map((_, index) => (
           <span className="star" key={index}></span>
         ))}
-      </div>
+      </div> */}
 
       <section className="about-section">
         {/* Hero statement */}

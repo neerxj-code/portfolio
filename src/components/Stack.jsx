@@ -1,97 +1,128 @@
 import React from "react";
 
 const frontend = [
+   {
+    name: "HTML",
+    icon: "https://cdn.simpleicons.org/html5",
+    className: "html",
+  },
+   {
+    name: "CSS",
+    icon: "https://cdn.simpleicons.org/css",
+    className: "css",
+  },
   {
     name: "JavaScript",
     icon: "https://cdn.simpleicons.org/javascript",
-    className: "js",
+    // className: "js", 
   },
   {
     name: "TypeScript",
     icon: "https://cdn.simpleicons.org/typescript",
-    className: "ts",
+    // className: "ts",
   },
   {
     name: "React",
     icon: "https://cdn.simpleicons.org/react",
     className: "react",
   },
-  {
-    name: "Next.Js",
-    icon: "https://cdn.simpleicons.org/nextdotjs/ffffff",
-    className: "next",
-  },
-  {
-    name: "Redux",
-    icon: "https://cdn.simpleicons.org/redux",
-    className: "redux",
-  },
+  // {
+  //   name: "Next.Js",
+  //   icon: "https://cdn.simpleicons.org/nextdotjs/ffffff",
+  //   className: "next",
+  // },
+  // {
+  //   name: "Redux",
+  //   icon: "https://cdn.simpleicons.org/redux",
+  //   className: "redux",
+  // },
   {
     name: "Tailwind CSS",
     icon: "https://cdn.simpleicons.org/tailwindcss",
     className: "tailwind",
   },
-  {
-    name: "GSAP",
-    icon: "https://cdn.simpleicons.org/greensock",
-    className: "gsap",
-  },
-  {
-    name: "Framer Motion",
-    icon: "https://cdn.simpleicons.org/framer",
-    className: "framer",
-  },
-  {
-    name: "Sass",
-    icon: "https://cdn.simpleicons.org/sass",
-    className: "sass",
-  },
-  {
-    name: "Bootstrap",
-    icon: "https://cdn.simpleicons.org/bootstrap",
-    className: "bootstrap",
-  },
+  // {
+  //   name: "GSAP",
+  //   icon: "https://cdn.simpleicons.org/greensock",
+  //   className: "gsap",
+  // },
+  // {
+  //   name: "Framer Motion",
+  //   icon: "https://cdn.simpleicons.org/framer",
+  //   className: "framer",
+  // },
+  // {
+  //   name: "Sass",
+  //   icon: "https://cdn.simpleicons.org/sass",
+  //   className: "sass",
+  // },
+  // {
+  //   name: "Bootstrap",
+  //   icon: "https://cdn.simpleicons.org/bootstrap",
+  //   className: "bootstrap",
+  // },
 ];
 
 const backend = [
-  {
-    name: "Node.Js",
-    icon: "https://cdn.simpleicons.org/nodedotjs",
-    className: "node",
-  },
-  {
-    name: "NestJS",
-    icon: "https://cdn.simpleicons.org/nestjs",
-    className: "nest",
-  },
-  {
-    name: "Express.Js",
-    icon: "https://cdn.simpleicons.org/express/ffffff",
-    className: "express",
-  },
+  // {
+  //   name: "Node.Js",
+  //   icon: "https://cdn.simpleicons.org/nodedotjs",
+  //   className: "node",
+  // },
+  // {
+  //   name: "NestJS",
+  //   icon: "https://cdn.simpleicons.org/nestjs",
+  //   className: "nest",
+  // },
+  // {
+  //   name: "Express.Js",
+  //   icon: "https://cdn.simpleicons.org/express/ffffff",
+  //   className: "express",
+  // },
 ];
 
-const database = [
+const developer = [
   {
-    name: "MySQL",
-    icon: "https://cdn.simpleicons.org/mysql",
+    name: "GIT",
+    icon: "https://cdn.simpleicons.org/git",
     className: "mysql",
   },
-  {
-    name: "PostgreSQL",
-    icon: "https://cdn.simpleicons.org/postgresql",
-    className: "postgres",
+    {
+    name: "GITHUB",
+    icon: "https://cdn.simpleicons.org/github",
+    className: "github",
   },
-  {
-    name: "MongoDB",
-    icon: "https://cdn.simpleicons.org/mongodb",
-    className: "mongo",
+    {
+    name: "VITE",
+    icon: "https://cdn.simpleicons.org/vite",
+    className: "mysql",
   },
-  {
-    name: "Prisma",
-    icon: "https://cdn.simpleicons.org/prisma/ffffff",
-    className: "prisma",
+   {
+    name: "NETLIFY",
+    icon: "https://cdn.simpleicons.org/netlify",
+    className: "mysql",
   },
+   
+  // {
+  //   name: "MySQL",
+  //   icon: "https://cdn.simpleicons.org/mysql",
+  //   className: "mysql",
+  // },
+  // {
+  //   name: "PostgreSQL",
+  //   icon: "https://cdn.simpleicons.org/postgresql",
+  //   className: "postgres",
+  // },
+  // {
+  //   name: "MongoDB",
+  //   icon: "https://cdn.simpleicons.org/mongodb",
+  //   className: "mongo",
+  // },
+  // {
+  //   name: "Prisma",
+  //   icon: "https://cdn.simpleicons.org/prisma/ffffff",
+  //   className: "prisma",
+  // },
 ];
 
 const stars = Array.from({ length: 45 });
@@ -140,7 +171,7 @@ export default function Stack() {
 
           
 
-        //   background: #202020;
+          background: #202020;
           color: #eeeeee;
 
           font-family:
@@ -386,6 +417,7 @@ export default function Stack() {
         .tech-icon.bootstrap img {
           width: 40px;
         }
+        
 
 
         /* =========================================
@@ -404,6 +436,7 @@ export default function Stack() {
         .stack-category:nth-child(3) {
           margin-top: 3px;
         }
+          
 
 
         /* =========================================
@@ -785,7 +818,7 @@ export default function Stack() {
 
       <main className="stack-page">
 
-        {/* Background stars */}
+        {/* Background stars
         <div className="stack-stars" aria-hidden="true">
           {stars.map((_, index) => (
             <span
@@ -793,7 +826,7 @@ export default function Stack() {
               key={index}
             />
           ))}
-        </div>
+        </div> */}
 
 
         {/* Main content */}
@@ -815,16 +848,16 @@ export default function Stack() {
 
 
           {/* Backend */}
-          <StackCategory
+          {/* <StackCategory
             title="BACKEND"
             items={backend}
-          />
+          /> */}
 
 
-          {/* Database */}
+          {/* Developer Tools */}
           <StackCategory
-            title="DATABASE"
-            items={database}
+            title="DEVELOPER TOOLS"
+            items={developer}
           />
 
         </section>

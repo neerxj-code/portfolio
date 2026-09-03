@@ -9,11 +9,7 @@ const Hero = () => {
     <>
     <main className='portfolio-page'>
 
-      <div className="stars" aria-hidden="true">
-        {Array.from({ length: 42 }).map((_, index) => (
-          <span className="star" key={index}></span>
-        ))}
-      </div>
+
 
       {/* <div className='orange-shape-one'></div>
       <div className='orange-shape-two'></div>
