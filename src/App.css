@@ -1,3 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
+:root {
+  --bg: #202020;
+  --white: #eeeeee;
+  --muted: #999999;
+  --green: #00ff47;
+  --line: rgba(255, 255, 255, 0.1);
+  --display: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+}
+
 .app-page {
   position: relative;
   
@@ -11,6 +38,7 @@
 
 .stars {
   position: absolute;
+  overflow: hidden;
 
   inset: 0;
 

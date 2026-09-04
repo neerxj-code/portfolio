@@ -1,6 +1,6 @@
 .stack-page{
     position: relative;
-    min-height: 100vh;
+    min-height: 80vh;
     overflow: hidden;
     background: #202020;
     color: #eeeeee;
@@ -9,7 +9,7 @@
 
 .stack-container {
     position: relative;
-    z-index: 2;
+    /* z-index: 2; */
     width: min(1080px, calc(100% - 48px));
     margin: 0 auto;
     padding: 75px 0 100px;

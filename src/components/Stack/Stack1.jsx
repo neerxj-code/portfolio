@@ -169,10 +169,10 @@ const Stack1 = () => {
             items={frontend}
             />
 
-            <StackCategory
+            {/* <StackCategory
             title='BACKEND'
             items={backend}
-            />
+            /> */}
 
             <StackCategory
             title='DEVELOPER TOOLS'
