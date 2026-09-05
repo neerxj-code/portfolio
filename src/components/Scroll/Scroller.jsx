@@ -1,141 +1,105 @@
 import { useEffect, useRef, useState } from "react";
-import { gsap } from "gsap";
+import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "./Scroller.css";
+import './Scroller.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
+export default function ScrollProgress() {
+  const progressRef = useRef(null);
+  const trackRef = useRef(null);
+  const [isDragging, setIsDragging] = useState(false);
 
-
-
-
-export default function Test() {
-  const appRef = useRef(null);
-
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [activeProject, setActiveProject] = useState(5);
-  const [activeSection, setActiveSection] = useState(0);
-
-  /*
-   ============================================
-   GSAP ANIMATIONS
-   ============================================
-  */
-
+  // Sync progress bar with page scroll
   useEffect(() => {
+    const progress = progressRef.current;
+
+    if (!progress) return;
+
     const ctx = gsap.context(() => {
+      gsap.to(progress, {
+        scaleY: 1,
+        transformOrigin: "top",
+        ease: "none",
 
-
-      /*
-       ------------------------------
-       REFRESH
-      ------------------------------
-      */
-
-      ScrollTrigger.refresh();
-
-    }, appRef);
+        scrollTrigger: {
+          trigger: document.documentElement,
+          start: "top top",
+          end: "bottom bottom",
+          scrub: 0.1,
+        },
+      });
+    });
 
     return () => ctx.revert();
-
   }, []);
 
+  // Convert mouse position to scroll position
+  const handleScrollToFraction = (clientY) => {
+    if (!trackRef.current) return;
 
-  /*
-   ============================================
-   SECTION TRACKING
-   ============================================
-  */
+    const rect = trackRef.current.getBoundingClientRect();
 
-  useEffect(() => {
-
-    const sections = document.querySelectorAll(
-      "section[data-section]"
+    const relativeY = Math.max(
+      0,
+      Math.min(rect.height, clientY - rect.top)
     );
 
-    const observer = new IntersectionObserver(
-      (entries) => {
+    const fraction = relativeY / rect.height;
 
-        entries.forEach((entry) => {
+    const maxScroll =
+      document.documentElement.scrollHeight - window.innerHeight;
 
-          if (entry.isIntersecting) {
+    const targetScroll = fraction * maxScroll;
 
-            setActiveSection(
-              Number(
-                entry.target.getAttribute(
-                  "data-section"
-                )
-              )
-            );
-
-          }
-
-        });
-
-      },
-      {
-        threshold: 0.4,
-      }
-    );
-
-    sections.forEach((section) =>
-      observer.observe(section)
-    );
-
-    return () => observer.disconnect();
-
-  }, []);
-
-
-  /*
-   ============================================
-   NAVIGATION
-   ============================================
-  */
-
-  const scrollTo = (id) => {
-
-    setMenuOpen(false);
-
-    document
-      .getElementById(id)
-      ?.scrollIntoView({
-        behavior: "smooth",
-      });
-
+    window.scrollTo({
+      top: targetScroll,
+      behavior: isDragging ? "auto" : "smooth",
+    });
   };
 
+  // Start dragging
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+    handleScrollToFraction(e.clientY);
+  };
 
-  /*
-   ============================================
-   RENDER
-   ============================================
-  */
+  // Handle dragging
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      if (isDragging) {
+        handleScrollToFraction(e.clientY);
+      }
+    };
+
+    const handleMouseUp = () => {
+      setIsDragging(false);
+    };
+
+    if (isDragging) {
+      window.addEventListener("mousemove", handleMouseMove);
+      window.addEventListener("mouseup", handleMouseUp);
+    }
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("mouseup", handleMouseUp);
+    };
+  }, [isDragging]);
 
   return (
-    <main
-      className="site"
-      ref={appRef}
-    >
-
-
-      <div className="progress">
-
-        <span
-          style={{
-            height: `${
-              ((activeSection + 1) / 5) *
-              100
-            }%`,
-          }}
+    <div className="scroll-progress">
+      <div
+        ref={trackRef}
+        onMouseDown={handleMouseDown}
+        className="scroll-track"
+        title="Click or drag to scroll"
+      >
+        <div
+          ref={progressRef}
+          className="scroll-progress-bar"
         />
-
       </div>
-
-
-
-      
-
-    </main>
+    </div>
   );
 }

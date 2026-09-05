@@ -32,7 +32,7 @@ const Contact = () => {
 
 
           <p>
-          built by Neeraj
+          built by Neeraj 
           </p>
 
 

@@ -1,6 +1,8 @@
 import './App.css';
 
-import React from 'react'
+import React, { useState } from 'react'
+
+import Preloader from './components/Preloader/Preloader';
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Marquee from './components/Marquee'
@@ -15,20 +17,37 @@ import Project from './components/Projects/Project';
 import Contact from './components/Contact/Contact';
 import SideEmail from './components/Side Email/SideEmail';
 import Scroller from './components/Scroll/Scroller'
+
 // import Test from './components/Test'
 
+
+
+
+
 const App = () => {
+
+  const [loading, setLoading] = useState(true);
+
   return (
     <div className=' bg-#202020 min-h-screen '>
-      <div className='app-page'>
+
+          <div className='app-page'>
               <div className="stars" aria-hidden="true">
         {Array.from({ length: 42 }).map((_, index) => (
           <span className="star" key={index}></span>
         ))}
          </div>
 
-      <SideEmail />
-      <Scroller />
+        {loading && (
+        <Preloader
+          onComplete={() => setLoading(false)}
+        />
+      )}  
+
+         <Scroller />
+
+      {/* <SideEmail /> */}
+      
 
       <Hero />
       <Marquee />

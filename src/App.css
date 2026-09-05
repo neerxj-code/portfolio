@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
 
 :root {
@@ -6,7 +7,7 @@
   --muted: #999999;
   --green: #00ff47;
   --line: rgba(255, 255, 255, 0.1);
-  --display: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  --display: "Anton", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 * {
@@ -22,7 +23,7 @@ html {
 body {
   background: var(--bg);
   color: var(--white);
-  font-family: "Inter", sans-serif;
+  font-family: "Anton", "Inter", sans-serif;
 }
 
 .app-page {

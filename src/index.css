@@ -3,7 +3,7 @@
 @import "tailwindcss";
 
 :root{
-    font-family: "DM Sans", sans-serif;
+    font-family: "Anton", "DM Sans", sans-serif;
     color: #111111;
     background: #202020;
     font-synthesis: none;
@@ -33,6 +33,25 @@ button, a{
 button{
     font-family: inherit;
 }
+
+
+/* 1. For Firefox, IE, and Edge */
+html, body {
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;    /* IE and Edge */
+}
+
+/* 2. For Chrome, Safari, and Opera */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent;
+  display: none;
+}
+
+
 
 /* hero section */
 
