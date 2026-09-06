@@ -33,7 +33,7 @@ const App = () => {
 
           <div className='app-page'>
               <div className="stars" aria-hidden="true">
-        {Array.from({ length: 42 }).map((_, index) => (
+        {Array.from({ length: 62 }).map((_, index) => (
           <span className="star" key={index}></span>
         ))}
          </div>
