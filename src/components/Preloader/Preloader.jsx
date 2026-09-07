@@ -29,6 +29,7 @@ const Preloader = ({ onComplete }) => {
     // Black panels covering the screen
     gsap.set(panels, {
       yPercent: 0,
+      force3D: true,
     });
 
     // Name visible from beginning
@@ -79,6 +80,7 @@ const Preloader = ({ onComplete }) => {
         duration: 0.5,
         stagger: 0.08,
         ease: "power3.inOut",
+        force3D: true,
       },
       "<"
     )

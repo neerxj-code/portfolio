@@ -1,15 +1,22 @@
-import React from 'react'
+
 import Navbar from './Navbar'
 import { ArrowUpRight } from 'lucide-react';
+import character from "../assets/character.png";
+
+import React, { useLayoutEffect, useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 
 
 const Hero = () => {
+
   return (
     <>
-    <main className='portfolio-page'>
-
-
+    <main 
+    className='hero-section'>
 
       {/* <div className='orange-shape-one'></div>
       <div className='orange-shape-two'></div>
@@ -44,7 +51,12 @@ const Hero = () => {
                 <span className='arrow'><ArrowUpRight size={30}/></span>
                </button>
         
-        <img src='\src\assets\character.png' alt='Loading...' className='character'></img>
+                
+                  <img 
+                src={character}
+                alt='Loading...' 
+                className='character'></img>
+                
 
         
 
