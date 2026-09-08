@@ -9,7 +9,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Contact = () => {
   return (
-    <div className='site1'>
+    <div 
+    id="contact"
+    className='site1'>
       <section
         id="contact"
         data-section="5"
@@ -32,8 +34,42 @@ const Contact = () => {
 
 
           <p>
-          built by Neeraj 
+          Follow me!
           </p>
+
+          <div className='contact-social'>
+
+                    <a 
+                    href="https://github.com/neerxj-code"
+                  target="_blank"
+                  rel="noreferrer"
+                    ><img className='tech-icon1 bg-white rounded-full' src="https://cdn.simpleicons.org/github"></img>Github
+                    </a>
+
+                    <a 
+                    href="https://linkedin.com"
+                  target="_blank"
+                  rel="noreferrer">
+                    <img className='tech-icon1' src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"></img>
+                      Linkedin
+                    </a>
+
+                    <a 
+                    href="https://x.com/_neeraj_jaiswal"
+                  target="_blank"
+                  rel="noreferrer">
+                    <img className='tech-icon1' src="https://cdn.simpleicons.org/x"></img>
+                    X/Twitter
+                  </a>
+
+                    <a 
+                    href="https://www.instagram.com/neerxj_jaiswal/"
+                  target="_blank"
+                  rel="noreferrer">
+                    <img className='tech-icon1' src="https://cdn.simpleicons.org/instagram"></img>
+                      Instagram
+                    </a>
+          </div>
 
 
           {/* <div className="contact-stats">

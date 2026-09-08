@@ -8,6 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Navbar = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const linksRef = useRef([]);
 
   const scrollTo = (id) => {
     setMenuOpen(false);
@@ -90,13 +91,14 @@ const Navbar = () => {
                     href="https://github.com/neerxj-code"
                   target="_blank"
                   rel="noreferrer"
-                    >Github
+                    ><img className='tech-icon1 bg-white rounded-full' src="https://cdn.simpleicons.org/github"></img>Github
                     </a>
 
                     <a 
                     href="https://linkedin.com"
                   target="_blank"
                   rel="noreferrer">
+                    <img className='tech-icon1' src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"></img>
                       Linkedin
                     </a>
 
@@ -104,6 +106,7 @@ const Navbar = () => {
                     href="https://x.com/_neeraj_jaiswal"
                   target="_blank"
                   rel="noreferrer">
+                    <img className='tech-icon1' src="https://cdn.simpleicons.org/x"></img>
                     X/Twitter
                   </a>
 
@@ -111,6 +114,7 @@ const Navbar = () => {
                     href="https://www.instagram.com/neerxj_jaiswal/"
                   target="_blank"
                   rel="noreferrer">
+                    <img className='tech-icon1' src="https://cdn.simpleicons.org/instagram"></img>
                       Instagram
                     </a>
 
@@ -122,47 +126,51 @@ const Navbar = () => {
                   </span>
 
                   
-
                   <button
-                  onClick={()=>
-                    scrollTo("home")
-                  }
+                  onClick={(e) => {
+              e.preventDefault();
+              scrollTo("hero");
+            }}
                   >
                     <i className='yellow' />
                     Home
                   </button>
 
                   <button
-                  onClick={()=>
-                    scrollTo("about")
-                  }
+                  onClick={(e) => {
+              e.preventDefault();
+              scrollTo("about");
+            }}
                   >
                     <i className='blue' />
                     About Me
                   </button>
 
                   <button
-                  onClick={()=>
-                    scrollTo("stack")
-                  }
+                  onClick={(e) => {
+              e.preventDefault();
+              scrollTo("stack");
+            }}
                   >
                     <i className='green' />
                     Stack
                   </button>
 
                   <button
-                  onClick={()=>
-                    scrollTo("projects")
-                  }
+                  onClick={(e) => {
+              e.preventDefault();
+              scrollTo("projects");
+            }}
                   >
                     <i className='purple' />
                     Projects
                   </button>
 
                   <button
-                  onClick={()=>
-                    scrollTo("contact")
-                  }
+                  onClick={(e) => {
+              e.preventDefault();
+              scrollTo("contact");
+            }}
                   >
                     <i className='red' />
                     Contact

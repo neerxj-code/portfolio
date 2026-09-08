@@ -111,11 +111,13 @@ a {
 }
 
 .contact-inner p {
-  margin-top: 25px;
+  margin-top: 16px;
 
-  color: #777;
+  color: white;
+  font-weight: 500;
 
-  font-size: 12px;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .contact-stats {
@@ -132,8 +134,28 @@ a {
   font-size: 12px;
 }
 
-@media (max-width: 420px) {
+.contact-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.contact-social a,
+.tech-icon1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.tech-icon1{
+  height: 25px;
+  width: 25px;
+}
+
+@media (max-width: 480px) {
   .contact-email{
-    font-size: 28px;
+    font-size: 30px;
   }
 }

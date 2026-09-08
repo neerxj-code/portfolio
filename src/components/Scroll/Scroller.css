@@ -1,6 +1,6 @@
 .scroll-progress {
   position: fixed;
-  right: 24px;
+  right: 18px;
   top: 50%;
   transform: translateY(-50%);
   z-index: 1000;
@@ -32,4 +32,10 @@
   transform-origin: top;
 
   /* box-shadow: 0 0 1px #00ff66; */
+}
+
+@media (max-width: 480px) {
+  .scroll-progress{
+    right: 10px;
+  }
 }

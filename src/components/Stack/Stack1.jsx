@@ -182,7 +182,9 @@ function StackCategory({ title, items }) {
 
 const Stack1 = () => {
   return (
-    <main className='stack-page'>
+    <main 
+    id='stack' 
+    className='stack-page'>
         <section className='stack-container'>
             <div className='stack-heading'>
                 <span className='heading-symbol'>✣</span>
