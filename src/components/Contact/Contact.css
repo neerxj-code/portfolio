@@ -131,3 +131,9 @@ a {
 
   font-size: 12px;
 }
+
+@media (max-width: 420px) {
+  .contact-email{
+    font-size: 28px;
+  }
+}

@@ -3,7 +3,9 @@ import './About1.css';
 
 const About1 = () => {
   return (
-    <main className='about-page'>
+    <main 
+    id="about"
+    className='about-page'>
         {/* <div className='stars' aria-hidden='true'>
             {Array.from({length: 84}).map((_, index) => (
                 <span className='star' key={index}></span>
@@ -14,32 +16,24 @@ const About1 = () => {
         <section className='about-section1'>
             <div className='about-statement'>
                 <p>
-                I believe in a user centered design approach, ensuring that every
-                project I work on is tailored to meet the specific needs of its
-                users.
+                I build digital experiences that are <span className="text-[#00ff66] font-normal">fast</span>, <span className="text-white font-normal">responsive</span>, and designed to feel as good as they look.
                 </p>
             </div>
 
-            <div className='about-label'>This is me.</div>
+            <div className='about-label'>PHILOSOPHY & APPROACH</div>
 
             <div className='about-grid1'>
                 <div className='about-title1'>
-                    <h1>Hi, I'm Neeraj.</h1>
+                    <h1> HI, I'M <span className="text-[#00ff66]">NEERAJ</span>.</h1>
                 </div>
 
                 <div className='about-text1'>
                     <p>
-                        I'm a frontend web developer dedicated to turning ideas into
-                        creative solutions. I specialize in creating seamless and
-                        intuitive user experiences.
+                        I'm a frontend developer focused on creating intuitive, high-performance, and visually engaging web experiences with React, JavaScript, and Tailwind CSS.
                     </p>
 
                     <p>
-              My approach focuses on creating scalable, high-performing
-              solutions tailored to both user needs and business objectives.
-              By prioritizing performance, accessibility, and responsiveness,
-              I strive to deliver experiences that not only engage users but
-              also drive tangible results.
+              My philosophy prioritizes clean component architecture, scalable design systems, smooth motion design, and responsive layouts that look exceptional across all devices.
                    </p>
                 </div>
             </div>

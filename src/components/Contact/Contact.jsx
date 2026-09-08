@@ -24,7 +24,7 @@ const Contact = () => {
 
 
           <a
-            href="mailto:tasmiriolslam@gmail.com"
+            href="mailto:neerajjaiswal989@gmail.com"
             className="contact-email"
           >
             neerajjaiswal989@gmail.com

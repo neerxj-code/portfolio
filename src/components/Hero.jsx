@@ -16,6 +16,7 @@ const Hero = () => {
   return (
     <>
     <main 
+    id="hero"
     className='hero-section'>
 
       {/* <div className='orange-shape-one'></div>

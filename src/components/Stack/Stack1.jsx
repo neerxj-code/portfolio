@@ -17,14 +17,20 @@ const frontend = [
     icon: "https://cdn.simpleicons.org/javascript",
     // className: "js", 
   },
+
   {
-    name: "TypeScript",
-    icon: "https://cdn.simpleicons.org/typescript",
-    // className: "ts",
+    name: "Tailwind CSS",
+    icon: "https://cdn.simpleicons.org/tailwindcss",
+    className: "tailwind",
   },
   {
     name: "React",
     icon: "https://cdn.simpleicons.org/react",
+    className: "react",
+  },
+    {
+    name: "GSAP",
+    icon: "https://cdn.simpleicons.org/GSAP",
     className: "react",
   },
     // {
@@ -37,11 +43,7 @@ const frontend = [
   //   icon: "https://cdn.simpleicons.org/redux",
   //   className: "redux",
   // },
-  {
-    name: "Tailwind CSS",
-    icon: "https://cdn.simpleicons.org/tailwindcss",
-    className: "tailwind",
-  },
+
   // {
   //   name: "GSAP",
   //   icon: "https://cdn.simpleicons.org/greensock",
@@ -64,7 +66,25 @@ const frontend = [
   // },
 ];
 
-const backend = [
+const learning = [
+
+  {
+    name: "TypeScript",
+    icon: "https://cdn.simpleicons.org/typescript",
+    // className: "ts",
+  },
+
+      {
+    name: "NEXT.JS",
+    icon: "https://cdn.simpleicons.org/next.js",
+    className: "tailwind",
+  },
+        {
+    name: "FRAMER MOTION",
+    icon: "https://cdn.simpleicons.org/framer",
+    className: "tailwind",
+  },
+
      // {
   //   name: "Node.Js",
   //   icon: "https://cdn.simpleicons.org/nodedotjs",
@@ -98,6 +118,12 @@ const developer = [
     icon: "https://cdn.simpleicons.org/vite",
     className: "mysql",
   },
+     {
+    name: "FIGMA",
+    icon: "https://cdn.simpleicons.org/figma",
+    className: "mysql",
+  },
+   
    {
     name: "NETLIFY",
     icon: "https://cdn.simpleicons.org/netlify",
@@ -169,10 +195,10 @@ const Stack1 = () => {
             items={frontend}
             />
 
-            {/* <StackCategory
-            title='BACKEND'
-            items={backend}
-            /> */}
+            <StackCategory
+            title='CURRENTLY EXPLORING/LEARNING'
+            items={learning}
+            />
 
             <StackCategory
             title='DEVELOPER TOOLS'

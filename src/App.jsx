@@ -1,4 +1,5 @@
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import React, { useState } from 'react'
 
@@ -33,7 +34,7 @@ const App = () => {
 
           <div className='app-page'>
               <div className="stars" aria-hidden="true">
-        {Array.from({ length: 62 }).map((_, index) => (
+        {Array.from({ length: 84 }).map((_, index) => (
           <span className="star" key={index}></span>
         ))}
          </div>
@@ -56,7 +57,6 @@ const App = () => {
       <Stack1 />
       <Project />
       <Contact />
-
       
     </div>
 
