@@ -8,36 +8,43 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 const projects = [
-  {
+
+    {
     number: "01",
-    title: "Electro EV",
-    tech: "Next.js  •  Payload CMS  •  Tailwind CSS",
+    title: "Portfolio",
+    tech: "React.js  •  GSAP  •  Tailwind CSS",
   },
-  {
-    number: "02",
-    title: "Epikcart",
-    tech: "React  •  Redux  •  React i18n",
-  },
-  {
-    number: "03",
-    title: "Resume Roaster",
-    tech: "GPT-4  •  Next.js  •  PostgreSQL",
-  },
-  {
-    number: "04",
-    title: "Real Estate",
-    tech: "React.js  •  Redux  •  Tailwind CSS",
-  },
-  {
-    number: "05",
-    title: "Consulting Finance",
-    tech: "HTML  •  CSS & SCSS  •  Javascript",
-  },
-  {
-    number: "06",
-    title: "devLinks",
-    tech: "Next.js  •  Formik  •  Drag & Drop",
-  },
+
+  // {
+  //   number: "01",
+  //   title: "Electro EV",
+  //   tech: "Next.js  •  Payload CMS  •  Tailwind CSS",
+  // },
+  // {
+  //   number: "02",
+  //   title: "Epikcart",
+  //   tech: "React  •  Redux  •  React i18n",
+  // },
+  // {
+  //   number: "03",
+  //   title: "Resume Roaster",
+  //   tech: "GPT-4  •  Next.js  •  PostgreSQL",
+  // },
+  // {
+  //   number: "04",
+  //   title: "Real Estate",
+  //   tech: "React.js  •  Redux  •  Tailwind CSS",
+  // },
+  // {
+  //   number: "05",
+  //   title: "Consulting Finance",
+  //   tech: "HTML  •  CSS & SCSS  •  Javascript",
+  // },
+  // {
+  //   number: "06",
+  //   title: "devLinks",
+  //   tech: "Next.js  •  Formik  •  Drag & Drop",
+  // },
 ];
 
 
@@ -82,6 +89,7 @@ export default function Test() {
         scrollTrigger: {
           trigger: ".projects",
           start: "top 75%",
+          toggleActions: "play reverse play reverse",
         },
       });
 
@@ -97,6 +105,7 @@ export default function Test() {
         scrollTrigger: {
           trigger: ".project-list",
           start: "top 75%",
+          toggleActions: "play reverse play reverse",
         },
       });
 
@@ -110,6 +119,7 @@ export default function Test() {
         scrollTrigger: {
           trigger: ".projects-layout",
           start: "top 75%",
+          toggleActions: "play reverse play reverse",
         },
       });
 

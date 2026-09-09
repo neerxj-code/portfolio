@@ -1,5 +1,10 @@
-import React from 'react'
+import React, { useLayoutEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 import './Stack1.css';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const frontend = [
     {
@@ -77,24 +82,24 @@ const learning = [
       {
     name: "NEXT.JS",
     icon: "https://cdn.simpleicons.org/next.js",
-    className: "tailwind",
+    className: "nextjs",
   },
-        {
-    name: "FRAMER MOTION",
-    icon: "https://cdn.simpleicons.org/framer",
-    className: "tailwind",
-  },
+  //       {
+  //   name: "Nest.Js",
+  //   icon: "https://cdn.simpleicons.org/nestjs",
+  //   className: "tailwind",
+  // },
 
      // {
   //   name: "Node.Js",
   //   icon: "https://cdn.simpleicons.org/nodedotjs",
   //   className: "node",
   // },
-  // {
-  //   name: "NestJS",
-  //   icon: "https://cdn.simpleicons.org/nestjs",
-  //   className: "nest",
-  // },
+  {
+    name: "Framer Motion",
+    icon: "https://cdn.simpleicons.org/framer",
+    className: "nest",
+  },
   // {
   //   name: "Express.Js",
   //   icon: "https://cdn.simpleicons.org/express/ffffff",
@@ -111,7 +116,7 @@ const developer = [
     {
     name: "GITHUB",
     icon: "https://cdn.simpleicons.org/github",
-    className: "github",
+    className: "nextjs",
   },
     {
     name: "VITE",
@@ -155,7 +160,7 @@ const developer = [
 function TechItem({ item }) {
     return (
         <div className='tech-item'>
-            <div className={`tech-icon ${item.className}`}>
+            <div className={`tech-icon ${item.className || ""}`}>
                 <img src={item.icon} alt='' />
             </div>
 
@@ -181,8 +186,63 @@ function StackCategory({ title, items }) {
 }
 
 const Stack1 = () => {
+
+  const stackRef = useRef(null);
+
+  useLayoutEffect(() => {
+
+    const ctx = gsap.context(() => {
+
+      // Section heading
+      gsap.from(".stack-heading", {
+        y: 50,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".stack-page",
+          start: "top 80%",
+          toggleActions: "play reverse play reverse",
+        },
+      });
+
+      // Categories
+      gsap.from(".stack-category", {
+        y: 70,
+        opacity: 0,
+        duration: 0.9,
+        ease: "power3.out",
+        stagger: 0.15,
+        scrollTrigger: {
+          trigger: ".stack-container",
+          start: "top 75%",
+          toggleActions: "play reverse play reverse",
+        },
+      });
+
+      // Individual technologies
+      gsap.from(".tech-item", {
+        y: 35,
+        opacity: 0,
+        duration: 0.6,
+        ease: "power3.out",
+        stagger: 0.08,
+        scrollTrigger: {
+          trigger: ".tech-list",
+          start: "top 85%",
+          toggleActions: "play reverse play reverse",
+        },
+      });
+
+    }, stackRef);
+
+    return () => ctx.revert();
+
+  }, []);
+
   return (
     <main 
+    ref={stackRef}
     id='stack' 
     className='stack-page'>
         <section className='stack-container'>

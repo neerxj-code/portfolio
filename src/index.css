@@ -881,3 +881,18 @@ body::-webkit-scrollbar,
     font-size: 16px;
   }
 }
+
+/* =========================================
+   SCROLL REVEAL
+========================================= */
+
+.about-reveal,
+.about-text-reveal,
+.hero-reveal,
+.hero-text-reveal,
+.stack-heading,
+.stack-category,
+.tech-item,
+.contact-reveal {
+  will-change: transform, opacity;
+}

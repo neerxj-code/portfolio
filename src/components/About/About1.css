@@ -141,3 +141,16 @@
     line-height: 1.65;
   }
 }
+
+/* =========================================
+   SCROLL REVEAL
+========================================= */
+
+.about-reveal,
+.about-text-reveal,
+.stack-heading,
+.stack-category,
+.tech-item,
+.contact-reveal {
+  will-change: transform, opacity;
+}

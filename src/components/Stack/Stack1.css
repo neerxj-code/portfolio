@@ -104,6 +104,10 @@
           width: 40px;
           height: 40px;
         }
+        .tech-icon.nextjs {
+          background: white;
+          border-radius: 100%;
+        }
 
         .tech-icon.js img {
           width: 31px;

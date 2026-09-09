@@ -58,7 +58,7 @@ a {
 
   width: min(1080px, calc(100% - 48px));
 
-  min-height: 90vh;
+  min-height: 100vh;
 
   margin: 0 auto;
   padding: 75px 0 100px;
@@ -353,7 +353,7 @@ a {
    CONTACT
 ========================================= */
 
-.contact {
+/* .contact {
   display: flex;
 
   align-items: flex-end;
@@ -414,7 +414,7 @@ a {
   color: #777;
 
   font-size: 12px;
-}
+} */
 
 
 /* =========================================
@@ -586,9 +586,9 @@ a {
 
   /* CONTACT */
 
-  .contact {
+  /* .contact {
     min-height: 70vh;
-  }
+  } */
 
 
 }

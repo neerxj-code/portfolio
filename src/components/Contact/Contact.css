@@ -159,3 +159,16 @@ a {
     font-size: 30px;
   }
 }
+
+/* =========================================
+   SCROLL REVEAL
+========================================= */
+
+.about-reveal,
+.about-text-reveal,
+.stack-heading,
+.stack-category,
+.tech-item,
+.contact-reveal {
+  will-change: transform, opacity;
+}

@@ -1,15 +1,42 @@
-import { useEffect, useRef, useState } from "react";
+
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Contact.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
-
+import { useLayoutEffect, useRef } from "react";
 
 const Contact = () => {
+
+   const contactRef = useRef(null);
+
+  useLayoutEffect(() => {
+
+    const ctx = gsap.context(() => {
+
+      gsap.from(".contact-reveal", {
+        y: 60,
+        opacity: 0,
+        duration: 0.9,
+        ease: "power3.out",
+        stagger: 0.12,
+        scrollTrigger: {
+          trigger: ".contact",
+          start: "top 80%",
+          toggleActions: "play reverse play reverse",
+        },
+      });
+
+    }, contactRef);
+
+    return () => ctx.revert();
+
+  }, []);
+
   return (
     <div 
+    ref={contactRef}
     id="contact"
     className='site1'>
       <section
@@ -20,24 +47,24 @@ const Contact = () => {
 
         <div className="contact-inner">
 
-          <span className="contact-question">
+          <span className="contact-question contact-reveal">
             Have a project in mind?
           </span>
 
 
           <a
             href="mailto:neerajjaiswal989@gmail.com"
-            className="contact-email"
+            className="contact-email contact-reveal"
           >
             neerajjaiswal989@gmail.com
           </a>
 
 
-          <p>
+          <p className="contact-reveal">
           Follow me!
           </p>
 
-          <div className='contact-social'>
+          <div className='contact-social contact-reveal'>
 
                     <a 
                     href="https://github.com/neerxj-code"

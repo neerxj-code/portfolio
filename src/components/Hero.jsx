@@ -19,10 +19,6 @@ const Hero = () => {
     id="hero"
     className='hero-section'>
 
-      {/* <div className='orange-shape-one'></div>
-      <div className='orange-shape-two'></div>
-      <div className='orange-glow'></div> */}
-      
       <div className='white-screen'>
         <div className='availability'>
           <div className='available-label'>
@@ -57,10 +53,7 @@ const Hero = () => {
                 src={character}
                 alt='Loading...' 
                 className='character'></img>
-                
-
-        
-
+             
         </div>
       </section>
     </main>

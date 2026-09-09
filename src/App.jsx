@@ -4,25 +4,15 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React, { useState } from 'react'
 
 import Preloader from './components/Preloader/Preloader';
-import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Marquee from './components/Marquee'
-import About from './components/About'
-
-
-import appBg from './assets/bg.png';
-import Marquee1 from './components/Marquee/Marquee1'
+import Marquee1 from './components/Marquee/Marquee1';
 import About1 from './components/About/About1'
 import Stack1 from './components/Stack/Stack1';
 import Project from './components/Projects/Project';
 import Contact from './components/Contact/Contact';
 import SideEmail from './components/Side Email/SideEmail';
 import Scroller from './components/Scroll/Scroller'
-
-// import Test from './components/Test'
-
-
-
 
 
 const App = () => {
@@ -33,34 +23,31 @@ const App = () => {
     <div className=' bg-#202020 min-h-screen '>
 
           <div className='app-page'>
-              <div className="stars" aria-hidden="true">
-        {Array.from({ length: 84 }).map((_, index) => (
-          <span className="star" key={index}></span>
-        ))}
-         </div>
-
+            <div className="stars" aria-hidden="true">
+               {Array.from({ length: 84 }).map((_, index) => (
+                <span className="star" key={index}></span>
+                ))}
+          </div>
 
         {loading && (
-        <Preloader
+          <Preloader
           onComplete={() => setLoading(false)}
-        />
-      )}  
+          />
+        )}  
 
-         <Scroller />
-
-      {/* <SideEmail /> */}
+        <Scroller />
+        {/* <SideEmail /> */}
       
-
-      <Hero />
-      <Marquee />
-      <About1 />
-      <Stack1 />
-      <Project />
-      <Contact />
+        <Hero />
+        <Marquee />
+        <About1 />
+        <Stack1 />
+        <Project />
+        <Contact />
       
+        </div>
+
     </div>
-
-      </div>
       
   )
 }
