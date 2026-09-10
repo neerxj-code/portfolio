@@ -58,7 +58,7 @@ a {
 
   width: min(1080px, calc(100% - 48px));
 
-  min-height: 100vh;
+  min-height: 60vh;
 
   margin: 0 auto;
   padding: 75px 0 100px;

@@ -216,6 +216,8 @@ body::-webkit-scrollbar,
     flex-shrink: 0;
     border: none;
     border-radius: 50%;
+    position: fixed;
+    right: 25px;
 
     background: #eeeeee;
 
@@ -639,8 +641,6 @@ body::-webkit-scrollbar,
     font-size: 16px;
   }
 
-
-
   .availability-title {
     margin-top: 8px;
 
@@ -659,8 +659,6 @@ body::-webkit-scrollbar,
     min-height: 100svh;
   }
 
-
-  /* Keep the same dark/white composition */
   .white-screen {
     top: 8px;
     right: 8px;
@@ -879,6 +877,10 @@ body::-webkit-scrollbar,
 
   .availability-title {
     font-size: 16px;
+  }
+
+  .menu-button{
+    right: 15px;
   }
 }
 

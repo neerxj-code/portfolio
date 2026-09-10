@@ -48,7 +48,7 @@ a {
 
 .site1 {
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
   background: var(--bg);
   display: flex;
   align-items: center;
@@ -57,7 +57,7 @@ a {
 
 .section1 {
   position: relative;
-  /* z-index: 2; */
+  z-index: 2;
 
   width: min(1080px, calc(100% - 48px));
 
@@ -139,6 +139,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 25px;
+  padding: 5px;
 }
 
 .contact-social a,
@@ -146,7 +147,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 0px;
 }
 
 .tech-icon1{
@@ -157,6 +158,9 @@ a {
 @media (max-width: 480px) {
   .contact-email{
     font-size: 30px;
+  }
+  .contact-social{
+    font-size: 14px;
   }
 }
 
