@@ -278,7 +278,7 @@ body::-webkit-scrollbar,
 .menu-close {
   position: absolute;
   top: 28px;
-  right: 60px;
+  right: 40px;
   color: #ddd;
   font-size: 26px;
 }
@@ -861,6 +861,7 @@ body::-webkit-scrollbar,
   .hero-button {
     padding: 12px 17px;
     font-size: 12px;
+    z-index: 9999;
   }
 
   .character {
@@ -881,6 +882,9 @@ body::-webkit-scrollbar,
 
   .menu-button{
     right: 15px;
+  }
+  .menu-close{
+    right: 30px;
   }
 }
 

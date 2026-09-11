@@ -44,7 +44,8 @@ const Hero = () => {
           </p>
                
                <button className='hero-button'>
-                <a href='/'>LET'S TALK</a>
+                <a href="https://www.instagram.com/neerxj_jaiswal/"
+                  target="_blank">LET'S TALK</a>
                 <span className='arrow'><ArrowUpRight size={30}/></span>
                </button>
         

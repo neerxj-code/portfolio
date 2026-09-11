@@ -189,7 +189,7 @@ a {
 
   margin-top: 5px;
 
-  color: #777;
+  color: #eee;
 
   font-size: 14px;
 }
@@ -204,8 +204,8 @@ a {
   font-size: 18px;
 }
 
-.project.active h2 {
-  color: #ddd;
+.project h2 {
+  color: white;
 }
 
 .project:hover h2 {
