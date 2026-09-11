@@ -427,7 +427,7 @@ body::-webkit-scrollbar,
 
 .hero-button{
     position: relative;
-    z-index: 8;
+    z-index: 9999;
 
     width: fit-content;
     
