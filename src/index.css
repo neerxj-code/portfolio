@@ -333,12 +333,12 @@ body::-webkit-scrollbar,
 .menu-contact {
   position: absolute;
   left: 40px;
-  bottom: 45px;
+  bottom: 55px;
 }
 
 .menu-contact span{
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   color: #999;
   font-size: 16px;
 }

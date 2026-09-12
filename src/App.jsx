@@ -13,6 +13,7 @@ import Project from './components/Projects/Project';
 import Contact from './components/Contact/Contact';
 import SideEmail from './components/Side Email/SideEmail';
 import Scroller from './components/Scroll/Scroller'
+import Navbar from './components/Navbar';
 
 
 const App = () => {
@@ -39,6 +40,7 @@ const App = () => {
         {/* <SideEmail /> */}
       
         <Hero />
+        <Navbar />
         <Marquee />
         <About1 />
         <Stack1 />

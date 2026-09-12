@@ -31,7 +31,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <Navbar />
+      {/* <Navbar /> */}
 
       <section className='hero-content'>
 
