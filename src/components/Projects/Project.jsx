@@ -13,6 +13,14 @@ const projects = [
     number: "01",
     title: "Portfolio",
     tech: "React.js  •  GSAP  •  Tailwind CSS",
+    url: "https://neerajxcode.netlify.app/",
+  },
+
+      {
+    number: "02",
+    title: "Ecommerce Dashboard",
+    tech: "React.js  •  Tailwind CSS  •  REST API",
+    url: "https://shopflow-neeraj.netlify.app/",
   },
 
   // {
@@ -236,33 +244,6 @@ export default function Test() {
       ref={appRef}
     >
 
-      
-
-
-      
-
-
-      
-
-      {/* Progress */}
-
-      {/* <div className="progress">
-
-        <span
-          style={{
-            height: `${
-              ((activeSection + 1) / 5) *
-              100
-            }%`,
-          }}
-        />
-
-      </div> */}
-
-
-
-      
-
       {/* =========================
           PROJECTS
       ========================== */}
@@ -317,7 +298,12 @@ export default function Test() {
                   <div className="project-information">
 
                     <h2>
-
+                     <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                      >
                       {project.title}
 
                       {activeProject === index && (
@@ -325,7 +311,7 @@ export default function Test() {
                           ↗
                         </span>
                       )}
-
+                      </a>
                     </h2>
 
                     <span>
@@ -410,14 +396,6 @@ export default function Test() {
         </div>
 
       </section>
-
-
-      {/* =========================
-          CONTACT
-      ========================== */}
-
-      
-
     </main>
   );
 }
